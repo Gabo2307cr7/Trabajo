@@ -1,0 +1,123 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Monografía Interactiva: Tarjetas Madre</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Evolución de la Tarjeta Madre</h1>
+    <p>Pasa el mouse sobre los componentes para conocer su función</p>
+
+    <div class="container">
+        <div class="card-section">
+            <h2>Modelo Vintage (Socket 7 / Pentium)</h2>
+            <div class="image-wrapper">
+  <div class="image-wrapper">
+                <img src="Imagenes/Placa_Base_MicroATX.jpg" usemap="#map-vieja" alt="Placa Base Antigua">
+                
+ <map name="map-vieja">
+    <area shape="rect" coords="175,55,335,215" alt="Socket CPU" data-info="SOCKET LGA775: Zócalo para procesadores Intel Core 2 Duo o Pentium 4.">
+    <area shape="rect" coords="140,40,175,250" alt="VRM" data-info="FASES DE PODER (VRM): Regulan el voltaje limpio para el procesador.">
+    <area shape="rect" coords="205,10,250,45" alt="Conector CPU 4-pin" data-info="CONECTOR ATX 12V: Entrada de energía dedicada exclusivamente al procesador.">
+    <area shape="rect" coords="310,20,350,55" alt="Chokes" data-info="BOBINAS DE CHOQUE: Filtran la corriente para evitar picos de voltaje.">
+
+    <area shape="rect" coords="350,45,385,310" alt="RAM Slot 1" data-info="SLOT DDR2 (Amarillo): Ranura principal para memoria RAM DDR2 1066 MHz.">
+    <area shape="rect" coords="385,45,420,310" alt="RAM Slot 2" data-info="SLOT DDR2 (Amarillo): Segunda ranura para habilitar el Dual Channel.">
+    <area shape="rect" coords="430,120,465,270" alt="Conector ATX 24" data-info="CONECTOR ATX 24-PIN: Entrada de energía principal para toda la placa base.">
+    <area shape="rect" coords="415,20,445,60" alt="Fan Header" data-info="CPU_FAN: Conector de 4 pines para el ventilador del disipador del procesador.">
+
+    <area shape="rect" coords="195,225,305,330" alt="Northbridge" data-info="PUENTE NORTE (Intel): Gestiona la comunicación entre CPU, RAM y el puerto PCIe.">
+    <area shape="rect" coords="345,410,410,490" alt="Southbridge" data-info="PUENTE SUR (ICH): Controla los puertos SATA, USB y la comunicación de periféricos.">
+    <area shape="rect" coords="395,410,465,475" alt="SATA Ports" data-info="PUERTOS SATA: 4 conectores para discos duros y unidades SSD modernas.">
+
+    <area shape="rect" coords="140,350,450,390" alt="PCIe x16" data-info="RANURA PCI EXPRESS x16 (Azul): Slot de alta velocidad para tarjetas gráficas.">
+    <area shape="rect" coords="175,320,245,350" alt="PCIe x1" data-info="PCI EXPRESS x1: Ranura para tarjetas pequeñas como Wi-Fi o tarjetas de sonido.">
+    <area shape="rect" coords="140,415,245,465" alt="PCI Legacy 1" data-info="RANURA PCI (Blanca): Slot antiguo para tarjetas de expansión legacy.">
+    <area shape="rect" coords="140,465,245,510" alt="PCI Legacy 2" data-info="RANURA PCI (Blanca): Segunda ranura para hardware antiguo o tarjetas industriales.">
+
+    <area shape="rect" coords="15,10,135,50" alt="PS/2" data-info="PUERTOS PS/2: Conexiones clásicas para teclado (morado) y mouse (verde).">
+    <area shape="rect" coords="15,50,135,110" alt="LPT/Parallel" data-info="PUERTO PARALELO (Rosa): Usado antiguamente para conectar impresoras grandes.">
+    <area shape="rect" coords="15,115,70,165" alt="VGA" data-info="PUERTO VGA: Salida de video analógica para monitores antiguos o proyectores.">
+    <area shape="rect" coords="75,115,135,165" alt="USB/Ethernet" data-info="PUERTOS USB y LAN: Conexión para internet por cable y periféricos modernos.">
+    <area shape="rect" coords="15,170,135,225" alt="Audio Jacks" data-info="JACKS DE AUDIO: Conexiones para altavoces, micrófono y entrada de línea.">
+
+    <area shape="circle" coords="275,440,30" alt="Pila CMOS" data-info="PILA CR2032: Suministra energía para mantener la configuración de la BIOS y la hora.">
+    <area shape="rect" coords="35,420,105,480" alt="Super I/O" data-info="CHIP SUPER I/O: Monitorea temperaturas, voltajes y controla ventiladores.">
+    <area shape="rect" coords="445,340,475,445" alt="IDE Port" data-info="PUERTO IDE: Conector para cables planos antiguos (discos duros PATA).">
+    <area shape="rect" coords="30,485,120,515" alt="Audio Chip" data-info="CODEC DE AUDIO: Chip encargado de procesar el sonido de alta definición.">
+    <area shape="rect" coords="30,360,110,415" alt="LAN Chip" data-info="CHIP ETHERNET: Controlador para la conexión de red por cable (Gigabit LAN).">
+    <area shape="rect" coords="130,500,200,520" alt="Front Panel" data-info="FRONT PANEL HEADERS: Pines para conectar el botón de encendido y luces del gabinete.">
+    <area shape="rect" coords="205,500,280,520" alt="USB Headers" data-info="USB HEADERS: Pines para conectar los puertos USB frontales de la carcasa.">
+    <area shape="rect" coords="265,395,300,420" alt="BIOS Chip" data-info="CHIP BIOS/SPI: Chip de memoria que contiene el programa de arranque inicial.">
+    <area shape="rect" coords="310,470,340,500" alt="Crystal" data-info="OSCILADOR DE CRISTAL: Genera la frecuencia de reloj precisa para que los chips funcionen.">
+</map>
+
+    <div id="info-box" class="hidden"></div>
+
+    
+</body>
+</html>
+        
+            </div>
+        </div>
+
+        <div class="card-section">
+            <h2>Modelo Moderno (Z790 / AM5)</h2>
+            <div class="image-wrapper">
+                <img src="Imagenes/91How9uGudL._AC_SX522_.jpg" usemap="#map-nueva" alt="Placa Base Moderna">
+               <map name="map-nueva">
+    <area shape="rect" coords="390,290,560,460" alt="Socket AM4" data-info="SOCKET AM4 (AMD): Zócalo para procesadores Ryzen 3000, 4000G y 5000 Series.">
+    <area shape="rect" coords="350,140,560,280" alt="VRM Heatsink Top" data-info="DISIPADOR VRM SUPERIOR: Disipa el calor de las fases de poder que alimentan el CPU.">
+    <area shape="rect" coords="110,140,350,500" alt="VRM Heatsink Left" data-info="DISIPADOR VRM LATERAL (TUF): Gran disipador que cubre los MOSFETs para mantener temperaturas bajas.">
+    <area shape="rect" coords="80,140,110,210" alt="CPU Power" data-info="CONECTOR EPS 8-PIN: Entrada de energía reforzada dedicada exclusivamente al procesador.">
+    <area shape="rect" coords="570,140,640,180" alt="Chokes superior" data-info="BOBINAS DE CHOQUE TUF: Componentes de grado militar que estabilizan la corriente.">
+
+    <area shape="rect" coords="640,140,685,550" alt="RAM Slot 1" data-info="SLOT DDR4 (Negro): Ranura A1 para memoria RAM de alta velocidad.">
+    <area shape="rect" coords="685,140,730,550" alt="RAM Slot 2" data-info="SLOT DDR4 (Gris): Ranura A2 optimizada para un solo módulo o Dual Channel.">
+    <area shape="rect" coords="730,140,775,550" alt="RAM Slot 3" data-info="SLOT DDR4 (Negro): Ranura B1 para expansión de memoria.">
+    <area shape="rect" coords="775,140,820,550" alt="RAM Slot 4" data-info="SLOT DDR4 (Gris): Ranura B2 para completar el Dual Channel (2x módulos).">
+    <area shape="rect" coords="830,280,870,470" alt="Conector ATX 24" data-info="CONECTOR ATX 24-PIN: Entrada de energía principal para toda la placa base y componentes.">
+    <area shape="rect" coords="830,170,870,220" alt="Fan Headers" data-info="CPU_FAN & AIO_PUMP: Conectores para el ventilador del CPU y bomba de refrigeración líquida.">
+
+    <area shape="rect" coords="410,500,610,650" alt="Chipset B550" data-info="CHIPSET AMD B550 (TUF Heatsink): Controla los puertos SATA, USB y ranuras PCIe inferiores.">
+    <area shape="rect" coords="390,465,600,495" alt="M.2 Slot 1 (Top)" data-info="SLOT M.2_1 (PCIe 4.0): Ranura ultra rápida para SSD NVMe conectado directamente al CPU.">
+    <area shape="rect" coords="360,655,610,685" alt="M.2 Slot 2 (Bottom)" data-info="SLOT M.2_2 (PCIe 3.0): Ranura secundaria para SSD NVMe conectado al Chipset.">
+    <area shape="rect" coords="710,740,820,770" alt="SATA Ports" data-info="PUERTOS SATA 6Gb/s: 4 conectores para discos duros mecánicos o SSDs clásicos.">
+    <area shape="rect" coords="830,470,865,540" alt="USB 3.2 Header" data-info="USB 3.2 Gen 1 (Pines): Conector interno para los puertos USB 3.0 frontales del gabinete.">
+    <area shape="rect" coords="830,560,865,600" alt="BIOS FlashBack" data-info="BOTÓN BIOS FLASHBACK: Permite actualizar la BIOS sin CPU, RAM ni tarjeta de video instalados.">
+
+    <area shape="rect" coords="110,570,410,615" alt="SafeSlot PCIe 4.0" data-info="PCI EXPRESS 4.0 x16 (SafeSlot): Ranura reforzada con metal para tarjetas de video pesadas.">
+    <area shape="rect" coords="110,615,410,655" alt="PCIe x1" data-info="PCI EXPRESS x1: Ranura para tarjetas de expansión como captura de video o Wi-Fi.">
+    <area shape="rect" coords="110,700,410,730" alt="PCIe x16 Legacy" data-info="PCI EXPRESS 3.0 x16: Slot secundario para una segunda GPU o tarjetas de alto ancho de banda.">
+
+    <area shape="rect" coords="15,140,90,180" alt="USB 2.0" data-info="PUERTOS USB 2.0: Conexiones para teclado, mouse o periféricos de baja velocidad.">
+    <area shape="rect" coords="15,180,90,215" alt="DisplayPort" data-info="DISPLAYPORT: Salida de video digital de alta resolución (para gráficos integrados).">
+    <area shape="rect" coords="15,215,90,260" alt="HDMI" data-info="PUERTO HDMI: Salida de video digital estándar para monitores y TVs.">
+    <area shape="rect" coords="15,260,90,320" alt="USB 3.2 Gen 2" data-info="PUERTOS USB 3.2 Gen 2 (Azules): Puertos de alta velocidad (10Gbps) para datos rápidos.">
+    <area shape="rect" coords="15,320,90,360" alt="WiFi Antennas" data-info="ANTENAS WI-FI 6: Conectores para las antenas inalámbricas incluidas (Intel Wi-Fi 6).">
+    <area shape="rect" coords="15,360,90,415" alt="2.5Gb Ethernet" data-info="PUERTO LAN 2.5Gb: Conexión de red por cable ultra rápida para juegos y NAS.">
+    <area shape="rect" coords="15,415,90,480" alt="USB Type-C" data-info="PUERTO USB TYPE-C: Conector USB simétrico y reversible de alta velocidad.">
+    <area shape="rect" coords="15,480,90,560" alt="Audio Jacks" data-info="JACKS DE AUDIO 7.1: Conexiones de sonido analógico de alta definición.">
+
+    <area shape="circle" coords="275,510,35" alt="Pila CMOS" data-info="PILA CR2032: Suministra energía para mantener la configuración de la BIOS y la hora del sistema.">
+    <area shape="rect" coords="110,780,150,830" alt="TUF Audio Chip" data-info="AUDIO REFORZADO TUF: Códec de audio blindado con capacitores de audio japoneses.">
+    <area shape="rect" coords="110,660,150,710" alt="Super I/O Chip" data-info="CHIP NUVOTON SUPER I/O: Controla ventiladores, temperaturas y voltajes de la placa.">
+    <area shape="rect" coords="155,780,210,830" alt="RGB Headers" data-info="RGB & ARGB HEADERS: Conectores para tiras LED de 12V y 5V direccionables.">
+    <area shape="rect" coords="220,780,310,830" alt="Thunderbolt Header" data-info="THUNDERBOLT HEADER: Conector para tarjetas de expansión Thunderbolt.">
+    <area shape="rect" coords="320,780,430,830" alt="Front Panel Ports" data-info="FRONT PANEL HEADERS: Pines para conectar los botones de encendido y LEDs del gabinete.">
+    <area shape="rect" coords="440,780,510,830" alt="USB 2.0 Headers" data-info="USB 2.0 INTERNOS: Pines para los puertos USB 2.0 frontales de la carcasa.">
+    <area shape="rect" coords="520,780,600,830" alt="Chassis Fan Headers" data-info="CHASSIS FAN: Conectores de 4 pines para ventiladores adicionales del gabinete.">
+    <area shape="rect" coords="610,780,670,830" alt="Debug LEDs" data-info="Q-LED DEPURADOR: Pequeñas luces que indican problemas de CPU, DRAM, VGA o Boot al arrancar.">
+</map>
+            </div>
+        </div>
+    </div>
+
+    <div id="info-box" class="hidden"></div>
+
+    <script src="java.js"></script>
+</body>
+</html>
