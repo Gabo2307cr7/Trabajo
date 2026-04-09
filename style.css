@@ -1,0 +1,63 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    background-color: #1a1a1a;
+    color: white;
+    text-align: center;
+    margin: 0;
+    padding: 20px;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 40px;
+    margin-top: 30px;
+}
+
+.card-section {
+    background: #2d2d2d;
+    padding: 15px;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0,0,0,0.5);
+}
+
+.image-wrapper {
+    position: relative;
+    display: inline-block;
+}
+
+img {
+    max-width: 450px;
+    height: auto;
+    border-radius: 5px;
+    display: block;
+}
+
+/* Estilo del cuadro de información */
+#info-box {
+    position: fixed;
+    bottom: 30px;
+    left: 50%;
+    transform: translateX(-50%);
+    background: #0078d4;
+    color: white;
+    padding: 20px 30px;
+    border-radius: 50px;
+    font-weight: bold;
+    font-size: 1.1rem;
+    box-shadow: 0 5px 15px rgba(0,0,0,0.3);
+    transition: all 0.3s ease;
+    z-index: 100;
+}
+
+.hidden {
+    opacity: 0;
+    visibility: hidden;
+    transform: translateX(-50%) translateY(20px) !important;
+}
+
+/* Efecto visual al pasar por el área (opcional) */
+area {
+    cursor: help;
+}
